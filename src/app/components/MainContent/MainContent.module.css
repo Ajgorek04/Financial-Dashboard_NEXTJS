@@ -1,6 +1,6 @@
 .mainContent {
   min-height: 100svh;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
