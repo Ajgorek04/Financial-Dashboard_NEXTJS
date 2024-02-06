@@ -5,4 +5,27 @@
   text-align: center;
   border-radius: 2rem;
   margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.turnOnNav {
+  margin-right: auto;
+  margin-left: 0.5rem;
+  display: none;
+}
+
+.headerTitle {
+  margin-right: none;
+}
+
+@media (max-width: 1200px) {
+  .turnOnNav {
+    display: flex;
+  }
+
+  .headerTitle {
+    margin-right: auto;
+  }
 }

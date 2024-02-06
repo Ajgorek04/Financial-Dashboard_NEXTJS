@@ -8,3 +8,9 @@
   gap: 1rem;
   align-items: center;
 }
+
+@media (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+}

@@ -1,3 +1,4 @@
+"use client";
 import styles from "./NavItems.module.css";
 import { NAVBARLIST } from "@/app/constants/navbarList";
 import { usePathname } from "next/navigation";
