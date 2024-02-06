@@ -7,7 +7,7 @@ import { Nav } from "../Nav/Nav";
 import { useEffect, useState } from "react";
 
 export function Layout({ children }) {
-  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [isNavVisible, setIsNavVisible] = useState(false);
 
   useEffect(() => {
     function handleResize() {

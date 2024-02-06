@@ -28,9 +28,22 @@
     justify-content: space-around;
     opacity: 0.9;
     gap: 0rem;
+    transition: 2s ease;
+    animation: fadeIn 0.5s ease forwards;
   }
 
   .close {
     display: flex;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
