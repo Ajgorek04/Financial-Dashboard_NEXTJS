@@ -2,6 +2,15 @@
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   color: #fff;
+  width: 100%;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .userInfoImg {
+    width: 25%;
+    height: auto;
+  }
 }

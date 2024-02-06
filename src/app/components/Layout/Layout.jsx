@@ -25,7 +25,10 @@ export function Layout({ children }) {
 
   return (
     <div className={styles.MainContentWrapper}>
-      <Nav isNavVisible={isNavVisible} />
+      <Nav
+        isNavVisible={isNavVisible}
+        toggleNav={() => setIsNavVisible(!isNavVisible)}
+      />
       <MainContent>
         <Header toggleNav={() => setIsNavVisible(!isNavVisible)} />
         {children}
