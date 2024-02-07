@@ -36,6 +36,12 @@
 .progressBar {
   display: flex;
   gap: 1rem;
+  align-items: center;
+}
+
+.progressBar p {
+  font-weight: bold;
+  color: #008000;
 }
 
 @media (max-width: 1200px) {
@@ -49,5 +55,13 @@
 
   .goal {
     width: 100%;
+  }
+
+  .netWorth div,
+  .goal div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 }

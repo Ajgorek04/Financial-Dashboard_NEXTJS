@@ -18,12 +18,12 @@ export function MainPage() {
         </div>
         <div className={styles.goal}>
           <FinancialBox>
-            <h2> GOAL </h2>
-            <br />
-            <label for="file">GOAL FOR THIS YEAR: </label>
+            <label for="progress">
+              <h3>GOAL FOR THIS YEAR: </h3>
+            </label>
             <div className={styles.progressBar}>
-              <progress value={progress} max="100000"></progress>
-              {((progress / 100000) * 100).toFixed(2)}%
+              <p>{((progress / 100000) * 100).toFixed(2)}%</p>
+              <progress id="progress" value={progress} max="100000"></progress>
             </div>
           </FinancialBox>
         </div>
