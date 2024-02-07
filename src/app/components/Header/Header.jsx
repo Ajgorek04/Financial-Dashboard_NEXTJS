@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./Header.module.css";
 import BARS from "../../../../public/Hamburger.svg";
+import { Button } from "../Button/Button";
 
 export function Header({ toggleNavVisibility }) {
   return (
@@ -11,6 +12,7 @@ export function Header({ toggleNavVisibility }) {
         onClick={toggleNavVisibility}
         alt="bars"
       />
+
       <h2 className={styles.headerTitle}>FINANCIAL DASHBOARD</h2>
     </header>
   );
