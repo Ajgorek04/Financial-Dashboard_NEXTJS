@@ -11,7 +11,7 @@ export function MainPage() {
       <div className={styles.topHome}>
         <div className={styles.netWorth}>
           <FinancialBox>
-            <h2>TOTAL NET WORTH</h2>
+            <h2> NET WORTH</h2>
             <br />
             <h3>{netWorth}</h3>
           </FinancialBox>

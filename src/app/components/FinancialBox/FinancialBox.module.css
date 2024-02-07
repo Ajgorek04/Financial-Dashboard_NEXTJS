@@ -1,6 +1,9 @@
 .financialBox {
   background-color: #141b32;
-  padding: 1rem 2rem;
   border-radius: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  justify-content: center;
 }
