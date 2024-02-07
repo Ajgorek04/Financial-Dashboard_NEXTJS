@@ -22,11 +22,11 @@
     width: 100%;
     height: 100%;
     justify-content: space-around;
-    opacity: 0.9;
-    gap: 0rem;
+    gap: 1rem;
     transition: 2s ease;
     animation: fadeIn 0.5s ease forwards;
     display: none;
+    opacity: 0.75;
   }
 
   .active {
@@ -45,7 +45,7 @@
     transform: translateY(-250px);
   }
   to {
-    opacity: 1;
+    opacity: 0.95;
     transform: translateY(0);
   }
 }
