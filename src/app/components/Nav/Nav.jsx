@@ -5,10 +5,6 @@ import CLOSE from "../../../../public/Close.svg";
 import Image from "next/image";
 
 export function Nav({ isNavVisible, toggleNavVisibility }) {
-  function toggleNav() {
-    console.log("wiem");
-  }
-
   return (
     <nav className={`${styles.nav} ${isNavVisible ? styles.active : ""}`}>
       <UserInfo />
