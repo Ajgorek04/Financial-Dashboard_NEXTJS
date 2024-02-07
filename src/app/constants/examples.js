@@ -4,6 +4,10 @@ const EXAMPLES = [
     value: "20 000$",
   },
   {
+    listName: "Progress",
+    value: "23700",
+  },
+  {
     listName: "CASH",
     value: "10 000$",
   },

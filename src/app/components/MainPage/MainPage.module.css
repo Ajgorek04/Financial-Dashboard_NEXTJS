@@ -13,8 +13,29 @@
   width: 25%;
 }
 
+.netWorth,
+.goal {
+  display: flex;
+}
+
+.netWorth div,
+.goal div {
+  flex: 1;
+}
+
+.netWorth div {
+  background-color: #e74a45;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .goal {
   width: 75%;
+}
+
+.progressBar {
+  display: flex;
+  gap: 1rem;
 }
 
 @media (max-width: 1200px) {
