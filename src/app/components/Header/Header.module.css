@@ -23,6 +23,7 @@
 @media (max-width: 1200px) {
   .turnOnNav {
     display: flex;
+    cursor: pointer;
   }
 
   .headerTitle {

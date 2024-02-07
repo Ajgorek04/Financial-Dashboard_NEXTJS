@@ -9,10 +9,6 @@
   align-items: center;
 }
 
-.hidden {
-  display: none;
-}
-
 .close {
   display: none;
 }
@@ -30,10 +26,16 @@
     gap: 0rem;
     transition: 2s ease;
     animation: fadeIn 0.5s ease forwards;
+    display: none;
+  }
+
+  .active {
+    display: flex;
   }
 
   .close {
     display: flex;
+    cursor: pointer;
   }
 }
 

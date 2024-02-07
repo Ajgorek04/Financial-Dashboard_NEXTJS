@@ -4,16 +4,20 @@ import { NavItems } from "../NavItems/NavItems";
 import CLOSE from "../../../../public/Close.svg";
 import Image from "next/image";
 
-export function Nav({ isNavVisible, toggleNav }) {
+export function Nav({ isNavVisible, toggleNavVisibility }) {
+  function toggleNav() {
+    console.log("wiem");
+  }
+
   return (
-    <nav className={isNavVisible ? styles.nav : styles.hidden}>
+    <nav className={`${styles.nav} ${isNavVisible ? styles.active : ""}`}>
       <UserInfo />
       <NavItems />
       <Image
-        onClick={toggleNav}
         src={CLOSE}
         alt="closenav"
         className={styles.close}
+        onClick={toggleNavVisibility}
       />
     </nav>
   );
