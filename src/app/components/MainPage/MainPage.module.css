@@ -1,5 +1,32 @@
 .mainPage {
-  flex: 1;
   height: 100%;
   margin: 1rem;
+  color: #fff;
+}
+
+.topHome {
+  display: flex;
+  gap: 1rem;
+}
+
+.netWorth {
+  width: 25%;
+}
+
+.goal {
+  width: 75%;
+}
+
+@media (max-width: 1200px) {
+  .topHome {
+    flex-wrap: wrap;
+  }
+
+  .netWorth {
+    width: 100%;
+  }
+
+  .goal {
+    width: 100%;
+  }
 }
