@@ -8,8 +8,16 @@ const EXAMPLES = [
     value: "23700",
   },
   {
+    listName: "CRYPTO",
+    value: "1000",
+  },
+  {
+    listName: "FINTECHS",
+    value: "10000",
+  },
+  {
     listName: "CASH",
-    value: "10 000$",
+    value: "10 000",
   },
 ];
 
