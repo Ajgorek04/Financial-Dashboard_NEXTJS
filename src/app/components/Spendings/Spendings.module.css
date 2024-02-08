@@ -2,6 +2,10 @@
   flex: 1;
 }
 
+.spendings div {
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .spendings {
     width: 50%;

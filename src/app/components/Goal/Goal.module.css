@@ -4,6 +4,7 @@
 }
 .goal div {
   flex: 1;
+  justify-content: center;
 }
 
 @media (max-width: 1200px) {
