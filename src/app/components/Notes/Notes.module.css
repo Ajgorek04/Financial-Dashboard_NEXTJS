@@ -1,0 +1,12 @@
+.notes {
+  flex: 1;
+  display: flex;
+  max-width: 100%;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1200px) {
+  .notes {
+    max-height: 10rem;
+  }
+}

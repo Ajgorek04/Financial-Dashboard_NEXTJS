@@ -1,10 +1,10 @@
-import { FinancialBox } from "../FinancialBox/FinancialBox";
 import styles from "./MainPage.module.css";
 import { Goal } from "../Goal/Goal";
 import { Networth } from "../NetWorth/Networth";
 import { Income } from "../Income/Income";
 import { Assets } from "../Assets/Assets";
 import { Spendings } from "../Spendings/Spendings";
+import { Notes } from "../Notes/Notes";
 
 export function MainPage() {
   return (
@@ -18,6 +18,7 @@ export function MainPage() {
         <Assets />
         <Spendings />
       </div>
+      <Notes />
     </main>
   );
 }
