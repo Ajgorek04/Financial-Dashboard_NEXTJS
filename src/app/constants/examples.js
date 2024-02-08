@@ -5,7 +5,7 @@ const EXAMPLES = [
   },
   {
     listName: "Progress",
-    value: "23700",
+    value: "61000",
   },
   {
     listName: "CRYPTO",
