@@ -1,0 +1,22 @@
+.netWorth {
+  width: 25%;
+  display: flex;
+}
+.netWorth div {
+  flex: 1;
+  background-color: #e74a45;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .netWorth {
+    width: 100%;
+  }
+  .netWorth div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}

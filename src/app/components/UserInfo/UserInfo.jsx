@@ -11,7 +11,7 @@ export function UserInfo() {
         className={styles.userInfoImg}
         priority
       />
-      <h1> Wiem </h1>
+      <h1> ADMIN </h1>
     </div>
   );
 }

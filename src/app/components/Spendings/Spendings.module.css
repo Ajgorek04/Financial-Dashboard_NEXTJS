@@ -1,0 +1,9 @@
+.spendings {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .spendings {
+    width: 50%;
+  }
+}

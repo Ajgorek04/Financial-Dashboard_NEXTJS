@@ -1,0 +1,19 @@
+.goal {
+  width: 75%;
+  display: flex;
+}
+.goal div {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .goal {
+    width: 100%;
+  }
+  .goal div {
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

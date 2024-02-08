@@ -1,0 +1,9 @@
+.assets {
+  flex: 3;
+}
+
+@media (max-width: 1200px) {
+  .assets {
+    width: 100%;
+  }
+}
