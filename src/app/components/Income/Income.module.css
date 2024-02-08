@@ -1,5 +1,10 @@
 .income {
   flex: 1;
+  display: flex;
+}
+
+.incomeText {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

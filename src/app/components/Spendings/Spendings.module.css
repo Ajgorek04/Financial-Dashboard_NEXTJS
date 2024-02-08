@@ -1,13 +1,13 @@
 .spendings {
   flex: 1;
+  display: flex;
 }
 
-.spendings div {
-  height: 100%;
+.spendingsText {
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
   .spendings {
-    width: 50%;
   }
 }

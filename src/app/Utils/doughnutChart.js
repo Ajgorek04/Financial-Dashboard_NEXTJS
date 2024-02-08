@@ -21,8 +21,8 @@ const DoughnutChart = () => {
     datasets: [
       {
         data: [FintechsValue, CryptoValue, CashValue],
-        backgroundColor: ["#fc7303", "#0800ff", "#008000"],
-        hoverBackgroundColor: ["#fc7303", "#03fc30", "#0800ff"],
+        backgroundColor: ["#0800ff", "#fc7303", "#1dbe98"],
+        hoverBackgroundColor: ["#0080ff", "#ffff00", "#106954"],
       },
     ],
   };

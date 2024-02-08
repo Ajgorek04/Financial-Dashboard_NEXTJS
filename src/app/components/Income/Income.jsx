@@ -4,7 +4,9 @@ import styles from "./Income.module.css";
 export function Income() {
   return (
     <div className={styles.income}>
-      <FinancialBox>Income</FinancialBox>
+      <FinancialBox>
+        <h3 className={styles.incomeText}>Monthly Income</h3>
+      </FinancialBox>
     </div>
   );
 }

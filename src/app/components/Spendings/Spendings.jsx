@@ -4,7 +4,9 @@ import { FinancialBox } from "../FinancialBox/FinancialBox";
 export function Spendings() {
   return (
     <div className={styles.spendings}>
-      <FinancialBox>Spendings</FinancialBox>
+      <FinancialBox>
+        <h3 className={styles.spendingsText}>Monthly Spendings</h3>
+      </FinancialBox>
     </div>
   );
 }
