@@ -2,15 +2,26 @@
 import styles from "./doughnutChart.module.css";
 import "chart.js/auto";
 import { Doughnut } from "react-chartjs-2";
+import { EXAMPLES } from "../constants/examples";
 
 const DoughnutChart = () => {
+  const FintechsValue = EXAMPLES.find(
+    (item) => item.listName === "FINTECHS"
+  )?.value;
+  const CashValue = EXAMPLES.find((item) => item.listName === "CASH")?.value;
+  const CryptoValue = EXAMPLES.find(
+    (item) => item.listName === "CRYPTO"
+  )?.value;
+
+  console.log(FintechsValue);
+
   const data = {
     labels: ["Fintechs", "Crypto", "Cash"],
 
     datasets: [
       {
-        data: [1200, 20000, 121252],
-        backgroundColor: ["#fc7303", "#0800ff", "#03fc30"],
+        data: [FintechsValue, CryptoValue, CashValue],
+        backgroundColor: ["#fc7303", "#0800ff", "#008000"],
         hoverBackgroundColor: ["#fc7303", "#03fc30", "#0800ff"],
       },
     ],

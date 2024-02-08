@@ -17,7 +17,7 @@ const EXAMPLES = [
   },
   {
     listName: "CASH",
-    value: "10 000",
+    value: "50000",
   },
 ];
 
