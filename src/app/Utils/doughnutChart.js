@@ -13,8 +13,6 @@ const DoughnutChart = () => {
     (item) => item.listName === "CRYPTO"
   )?.value;
 
-  console.log(FintechsValue);
-
   const data = {
     labels: ["Fintechs", "Crypto", "Cash"],
 
