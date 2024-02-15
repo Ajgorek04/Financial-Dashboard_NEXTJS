@@ -1,6 +1,6 @@
 import styles from "./AddNote.module.css";
 
-export function AddNote() {
+export function AddNote({ setIsShownNote }) {
   return (
     <div className={styles.addNote}>
       <h1>NEW NOTE</h1>
@@ -11,7 +11,12 @@ export function AddNote() {
         <p>CONTENT</p>
         <textarea cols="30" rows="10"></textarea>
         <button className={styles.addButton}>ADD NOTE</button>
-        <button className={styles.cancelButton}>CANCEL</button>
+        <button
+          onClick={() => setIsShownNote(false)}
+          className={styles.cancelButton}
+        >
+          CANCEL
+        </button>
       </div>
     </div>
   );
