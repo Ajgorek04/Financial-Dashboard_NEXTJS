@@ -12,10 +12,10 @@ export function Income() {
           Job <b>+ $4500</b>
         </h3>
         <h3 className={styles.incomeValue}>
-          Ew <b>+ $8300</b>
+          E-commerce <b>+ $8300</b>
         </h3>
         <h3 className={styles.incomeValue}>
-          Rf <b>+ $400</b>
+          Reselling <b>+ $400</b>
         </h3>
         <br />
         <BarChartIncome />
