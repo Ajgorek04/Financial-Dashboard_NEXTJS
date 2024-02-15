@@ -55,9 +55,10 @@ export function Notes() {
           {notes.map((note) => {
             return (
               <li key={note.name}>
-                Note Title: {note.name}
-                <br />
-                Note Content: {note.content}
+                <h3>Note Title: {note.name}</h3>
+                <p>
+                  <b>Note Content: </b> {note.content}
+                </p>
               </li>
             );
           })}
