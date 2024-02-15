@@ -5,7 +5,12 @@
   overflow-y: scroll;
 }
 
-@media (max-width: 1200px) {
-  .notes {
-  }
+.addNote {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addNote button {
+  background-color: none;
 }
