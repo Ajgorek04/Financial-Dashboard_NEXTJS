@@ -13,17 +13,6 @@
   gap: 1rem;
 }
 
-.progressBar {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.progressBar p {
-  font-weight: bold;
-  color: #06d48c;
-}
-
 .middleHome {
   display: flex;
   flex-wrap: wrap;
