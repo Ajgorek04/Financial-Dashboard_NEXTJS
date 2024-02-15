@@ -1,5 +1,6 @@
 import styles from "./Spendings.module.css";
 import { FinancialBox } from "../FinancialBox/FinancialBox";
+import BarChartSpendings from "@/app/Utils/barChartSpendings";
 
 export function Spendings() {
   return (
@@ -19,6 +20,8 @@ export function Spendings() {
         <h3 className={styles.spendingsValue}>
           Gifts <b>- 300$</b>
         </h3>
+        <br />
+        <BarChartSpendings />
       </FinancialBox>
     </div>
   );

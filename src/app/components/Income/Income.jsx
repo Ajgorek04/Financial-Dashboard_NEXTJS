@@ -1,4 +1,4 @@
-import BarChart from "@/app/Utils/barChart";
+import BarChartIncome from "@/app/Utils/barChartIncome";
 import { FinancialBox } from "../FinancialBox/FinancialBox";
 import styles from "./Income.module.css";
 
@@ -18,7 +18,7 @@ export function Income() {
           Rf <b>+ $400</b>
         </h3>
         <br />
-        <BarChart />
+        <BarChartIncome />
       </FinancialBox>
     </div>
   );

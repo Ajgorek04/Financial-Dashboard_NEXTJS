@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { Bar } from "react-chartjs-2";
-import styles from "./barChart.module.css"; // Upewnij się, że moduł CSS jest dostępny
+import styles from "./barChart.module.css";
 
-const BarChart = () => {
+const BarChartIncome = () => {
   const jobData = [
     { name: "Ew", value: 8305 },
     { name: "Rf", value: 400 },
@@ -45,4 +45,4 @@ const BarChart = () => {
   );
 };
 
-export default BarChart;
+export default BarChartIncome;
