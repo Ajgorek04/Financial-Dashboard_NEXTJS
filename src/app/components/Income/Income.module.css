@@ -7,7 +7,11 @@
   text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .income {
-  }
+.incomeValue {
+  display: flex;
+  justify-content: space-between;
+}
+
+.incomeValue b {
+  color: #00cc00;
 }

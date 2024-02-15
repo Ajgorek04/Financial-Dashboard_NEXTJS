@@ -1,7 +1,7 @@
 const EXAMPLES = [
   {
     listName: "NetWorth",
-    value: "20 000$",
+    value: "$61 000",
   },
   {
     listName: "Progress",
