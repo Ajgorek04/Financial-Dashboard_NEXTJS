@@ -1,0 +1,23 @@
+.settingsPage {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.settingsPage button {
+  background: 0;
+  border: 1px solid #06d48c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.settingsPage button:hover {
+  background-color: #06d48c;
+  color: #000;
+}
