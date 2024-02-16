@@ -28,25 +28,27 @@ export function Notes() {
 
   return (
     <div className={styles.notes}>
-      <FinancialBox>
-        <div className={styles.addNote}>
-          <h3>Notes</h3>
-          <button onClick={() => setIsShownNote(true)}>ADD NOTE</button>
-        </div>
-        <hr />
-        <ul className={styles.noteList}>
-          {notes.map((note) => {
-            return (
-              <li key={note.name}>
-                <h3>Note Title: {note.name}</h3>
-                <p>
-                  <b>Note Content: </b> {note.content}
-                </p>
-              </li>
-            );
-          })}
-        </ul>
-      </FinancialBox>
+      <div className={styles.addNote}>
+        <h3>Notes</h3>
+        <button onClick={() => setIsShownNote(true)}>ADD NOTE</button>
+      </div>
+      <div className={styles.notesList}>
+        <FinancialBox>
+          <ul className={styles.noteList}>
+            {notes.map((note) => {
+              return (
+                <li key={note.name}>
+                  <h3>Note Title: {note.name}</h3>
+                  <p>
+                    <b>Note Content: </b> {note.content}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+        </FinancialBox>
+      </div>
+
       {isShownNote && (
         <AddNote setIsShownNote={setIsShownNote} addNewNote={addNewNote} />
       )}
