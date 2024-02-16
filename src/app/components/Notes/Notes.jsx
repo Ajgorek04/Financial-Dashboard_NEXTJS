@@ -6,7 +6,7 @@ import { AddNote } from "../AddNote/AddNote";
 
 export function Notes() {
   const [isShownNote, setIsShownNote] = useState(false);
-  const notes = [
+  const [notes, setNotes] = useState([
     {
       name: "Notatka 1",
       content: "Wiem",
@@ -16,32 +16,15 @@ export function Notes() {
       content:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vel expedita non, recusandae sed tempora voluptatibus ea inventore assumenda culpa fugit libero praesentium officiis quasi sunt cupiditate omnis dolorum neque",
     },
-    {
-      name: "Notatka 3",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ue",
-    },
-    {
-      name: "Notatka 4",
-      content:
-        "Lorem ipsum dolor si officiis quasi sunt cupiditate omnis dolorum neque",
-    },
-    {
-      name: "Notatka 5",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing bero praesentium officiis quasi sunt cupiditate omnis dolorum neque",
-    },
-    {
-      name: "Notatka 6",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing bero praesentium officiis quasi sunt cupiditate omnis dolorum neque",
-    },
-    {
-      name: "Notatka 7",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing bero praesentium officiis quasi sunt cupiditate omnis dolorum neque",
-    },
-  ];
+  ]);
+
+  function addNewNote(title, content) {
+    const newNote = {
+      name: title,
+      content: content,
+    };
+    setNotes([...notes, newNote]);
+  }
 
   return (
     <div className={styles.notes}>
@@ -64,7 +47,9 @@ export function Notes() {
           })}
         </ul>
       </FinancialBox>
-      {isShownNote && <AddNote setIsShownNote={setIsShownNote} />}
+      {isShownNote && (
+        <AddNote setIsShownNote={setIsShownNote} addNewNote={addNewNote} />
+      )}
     </div>
   );
 }
