@@ -1,6 +1,7 @@
 import styles from "./UserInfo.module.css";
 import Image from "next/image";
 import USER from "../../../../public/user.png";
+import { USERINFO } from "@/app/constants/user";
 
 export function UserInfo() {
   return (
@@ -11,7 +12,7 @@ export function UserInfo() {
         className={styles.userInfoImg}
         priority
       />
-      <h1> ADMIN </h1>
+      <h1> {USERINFO.name} </h1>
     </div>
   );
 }

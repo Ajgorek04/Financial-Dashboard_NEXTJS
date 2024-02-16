@@ -1,0 +1,23 @@
+.profilePage {
+  height: 100%;
+  color: #fff;
+  display: flex;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile img {
+  margin-top: 2rem;
+  width: 200px;
+  height: 200px;
+}
+
+.profile h2 {
+  margin: auto;
+}
