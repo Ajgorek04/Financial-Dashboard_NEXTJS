@@ -4,4 +4,4 @@ npm install chart.js
 npm instal react-chartjs-2
 
 ![MAIN SCREEN](public/MAINSCREEN.png)
-![MAIN SCREEN MOBILE](public/MAINSCREENMOBILE.png)
+![MAIN SCREEN MOBILE](public/MAINSCREENONMOBILE.png)
