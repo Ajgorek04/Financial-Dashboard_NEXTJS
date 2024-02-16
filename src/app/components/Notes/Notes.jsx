@@ -38,7 +38,10 @@ export function Notes() {
             {notes.map((note) => {
               return (
                 <li key={note.name}>
-                  <h3>Note Title: {note.name}</h3>
+                  <div className={styles.noteTitle}>
+                    <h3>Note Title: {note.name}</h3>
+                    <button>DEL</button>
+                  </div>
                   <p>
                     <b>Note Content: </b> {note.content}
                   </p>
