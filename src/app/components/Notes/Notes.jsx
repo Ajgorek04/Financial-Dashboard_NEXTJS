@@ -26,6 +26,12 @@ export function Notes() {
     setNotes([...notes, newNote]);
   }
 
+  function delNote(index) {
+    const updatedNotes = [...notes];
+    updatedNotes.splice(index, 1);
+    setNotes(updatedNotes);
+  }
+
   return (
     <div className={styles.notes}>
       <div className={styles.addNote}>
@@ -35,12 +41,12 @@ export function Notes() {
       <div className={styles.notesList}>
         <FinancialBox>
           <ul className={styles.noteList}>
-            {notes.map((note) => {
+            {notes.map((note, index) => {
               return (
                 <li key={note.name}>
                   <div className={styles.noteTitle}>
                     <h3>Note Title: {note.name}</h3>
-                    <button>DEL</button>
+                    <button onClick={() => delNote(index)}>DEL</button>
                   </div>
                   <p>
                     <b>Note Content: </b> {note.content}
